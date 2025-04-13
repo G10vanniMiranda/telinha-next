@@ -8,7 +8,7 @@ import { PiPixLogoThin } from "react-icons/pi";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen p-3">
+    <div className="w-screen h-screen flex flex-col items-center p-4">
 
       <div className="w-full h-20 flex items-center justify-center gap-4">
 
