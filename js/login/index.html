@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <form>
+        <!-- input, select, text-area, -->
+        <h3 class="user-erro">Usuário Incorreto</h3>
+        <h3 class="senha-erro">Senha Incorreta</h3>
+        <select>
+            <option value="">ADM</option>
+            <option value="">User</option>
+        </select>
+        <input id="user" type="text" value="master" placeholder="Digite seu usuário">
+        <input id="password" type="password" value="123456" placeholder="Digite sua senha">
+        <button id="btnEntrar">Entrar</button>
+        <button onclick="cadastrar()">Cadastrar</button>
+
+        <p>Desenvolvido por <span>Span</span></p>
+    </form>
+
+    <style>
+        h3 {
+            padding: 10px;
+            color: white;
+            max-width: 300px;
+            border-radius: 10px;
+            background-color: rgb(218, 78, 78);
+        }
+
+        .user-erro {
+            display: block;
+            display: none;
+            display: block;
+        }
+
+        .senha-erro {
+            display: none;
+            display: block;
+        }
+    </style>
+
+    <script>
+        // selecionar as elementos para fazer o processar da informação
+        // user, senha, button
+        let userErro = document.querySelector(".user-erro")
+        let senhaErro = document.querySelector(".senha-erro")
+        let user = document.querySelector('#user')
+        let password = document.querySelector('#password')
+        let btnEntrar = document.querySelector("#btnEntrar")
+
+        console.log('Valores iniciais')
+        console.log(userErro.textContent)
+        console.log(senhaErro.textContent)
+        console.log(user.value)
+        console.log(password.value)
+
+        console.log('Valores finais')
+        console.log(userErro.textContent)
+        console.log(senhaErro.textContent)
+        console.log(user.value)
+        console.log(password.value)
+
+        document.querySelector('span').textContent = "Giovanni"
+
+        // document.querySelector('#btnEntrar').addEventListener("click", (event) => {
+        //     event.preventDefault()
+
+        //     document.querySelector('h3').textContent = "Mudei o h3"
+        // })
+
+        btnEntrar.addEventListener("click", (event) => {
+            event.preventDefault()
+
+            document.querySelector('h3').textContent = "Mudei o h3"
+        })
+
+        function cadastrar() {
+
+            document.querySelector('h3').textContent = "Mudei o h3"
+        }
+
+
+    </script>
+</body>
+
+</html>

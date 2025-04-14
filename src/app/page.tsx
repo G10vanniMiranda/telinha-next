@@ -8,8 +8,9 @@ import { PiPixLogoThin } from "react-icons/pi";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center p-4">
+    <div className="w-screen h-screen flex flex-col items-center p-4 overflow-x-hidden scroll-y-auto">
 
+      {/* Session 01 */}
       <div className="w-full h-20 flex items-center justify-center gap-4">
 
         <div className="w-11 h-11 bg-gray-100 rounded-full flex items-center justify-center">
@@ -39,8 +40,9 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full h-62 flex justify-center">
-        <div className="bg-teal-600 w-96 h-[230px] rounded-2xl px-4 py-3 flex flex-col gap-4">
+      {/* Session 02 */}
+      <div className="w-full h-62 flex justify-center items-center">
+        <div className="bg-teal-600 w-96 h-[230px] mt-5 rounded-2xl px-4 py-3 flex flex-col gap-4">
 
           <div className="flex justify-between">
             <p className="text-white text-sm">Conta</p>
@@ -62,13 +64,14 @@ export default function Home() {
           </button>
 
         </div>
-      </div>
+      </div >
 
-      <div className="w-full h-auto flex flex-col gap-3">
+      {/* Session 03 */}
+      <div className="w-full h-auto flex flex-col items-center justify-center gap-3">
 
         <p className="font-semibold text-xl">Pro dia a dia</p>
 
-        <div className="w-full h-auto flex gap-3">
+        <div className="w-full h-auto flex gap-3 overflow-x-auto">
 
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="w-22 h-18 flex items-center justify-center bg-teal-600 rounded-xl">
@@ -103,17 +106,28 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full h-auto flex flex-col gap-3 pt-10">
+      {/* Session 04 */}
+      <div className="w-full h-auto flex flex-col gap-3 pt-10 mb-410">
 
-        <div className="w-96 h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
-          <p>Cartão</p>
+        <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
+          <p>Cartão Débito</p>
           <CiCreditCard1 className="w-6 h-6" />
         </div>
 
-        <div className="w-96 h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
+        <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
+          <p>Cartão Crédito</p>
+          <CiCreditCard1 className="w-6 h-6" />
+        </div>
+
+        <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
           <p>Emprestimo</p>
           <CiCreditCard1 className="w-6 h-6" />
         </div>
+
+      </div>
+
+      {/* Session 05 */}
+      <div>
 
       </div>
 
