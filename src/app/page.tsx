@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { AiOutlineEye } from "react-icons/ai";
 import { CiCreditCard1, CiSearch } from "react-icons/ci";
 import { FiHelpCircle, FiMessageSquare } from "react-icons/fi";
@@ -99,6 +99,20 @@ export default function Home() {
             <p className="text-xs px-2 py-1">Cartão virtual</p>
           </div>
 
+        </div>
+
+      </div>
+
+      <div className="w-full h-auto flex flex-col gap-3 pt-10">
+
+        <div className="w-96 h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
+          <p>Cartão</p>
+          <CiCreditCard1 className="w-6 h-6" />
+        </div>
+
+        <div className="w-96 h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
+          <p>Emprestimo</p>
+          <CiCreditCard1 className="w-6 h-6" />
         </div>
 
       </div>
