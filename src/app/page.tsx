@@ -1,10 +1,14 @@
 
 import { AiOutlineEye } from "react-icons/ai";
-import { CiCreditCard1, CiSearch } from "react-icons/ci";
+import { CiCreditCard1, CiSearch, CiWallet } from "react-icons/ci";
 import { FiHelpCircle, FiMessageSquare } from "react-icons/fi";
+import { GoHome } from "react-icons/go";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosArrowForward, IoIosBarcode, IoMdNotificationsOutline } from "react-icons/io";
 import { LiaPiggyBankSolid } from "react-icons/lia";
+import { LuCreditCard, LuMenu } from "react-icons/lu";
 import { PiPixLogoThin } from "react-icons/pi";
+import { RxBlendingMode } from "react-icons/rx";
 
 export default function Home() {
   return (
@@ -107,27 +111,52 @@ export default function Home() {
       </div>
 
       {/* Session 04 */}
-      <div className="w-full h-auto flex flex-col gap-3 pt-10 mb-410">
+      <div className="w-full h-auto flex flex-col gap-3 pt-10 mb-10">
 
         <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
           <p>Cartão Débito</p>
-          <CiCreditCard1 className="w-6 h-6" />
+          <LuCreditCard className="w-6 h-6" />
         </div>
 
         <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
           <p>Cartão Crédito</p>
-          <CiCreditCard1 className="w-6 h-6" />
+          <LuCreditCard className="w-6 h-6" />
         </div>
 
         <div className="w-full h-18 bg-gray-100 rounded-2xl flex items-center justify-between p-4">
           <p>Emprestimo</p>
-          <CiCreditCard1 className="w-6 h-6" />
+          <RxBlendingMode className="w-6 h-6" />
         </div>
 
       </div>
 
       {/* Session 05 */}
-      <div>
+      <div className="bg-gray-100 w-full h-40 flex p-4 gap-9 rounded-t-4xl">
+
+        <div className="flex flex-col items-center">
+          <GoHome className="w-8 h-8" />
+          <p>Inicio</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <CiWallet className="w-8 h-8" />
+          <p>Carteira</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <LuCreditCard className="w-8 h-8" />
+          <p>Cartão</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <HiOutlineShoppingBag className="w-8 h-8" />
+          <p>Shop</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <LuMenu className="w-8 h-8" />
+          <p>Menu</p>
+        </div>
 
       </div>
 
